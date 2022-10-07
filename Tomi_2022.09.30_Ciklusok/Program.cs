@@ -70,6 +70,14 @@ namespace Tomi_2022._09._30_Ciklusok
             Console.Write("Adja meg a hatvány kitevőjét: ");
             int y = int.Parse(Console.ReadLine());
 
+            int ossz = 1;
+
+            for (int i = 1;i<=y;i++)
+            {
+                ossz *= x;
+            }
+
+            Console.WriteLine($"Hatvány alap:{x}, hatvány kitevő: {y} = {ossz}");
             Console.WriteLine(Math.Pow(x,y));
 
             Console.ReadKey();
